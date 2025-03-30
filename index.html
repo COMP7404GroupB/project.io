@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">COMP7404 GroupB</h1>
-            <h2 class="title is-4 has-text-grey-dark">Boosting Semi-Supervised Scene Text Recognition via Viewing and Summarizing</h2>
+            <h2 class="title is-3 has-text-grey-dark">Boosting Semi-Supervised Scene Text Recognition via Viewing and Summarizing</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">Yadong Qu,</span>
@@ -109,7 +109,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-4">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Existing scene text recognition (STR) methods struggle to recognize challenging texts, especially for artistic and severely distorted characters. The limitation lies in the insufficient exploration of character morphologies, including the monotonous
@@ -144,27 +144,44 @@ ing the character features in the student model with the reference features in t
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-4">Results</h2>
+      <div class="content">
+        <p>(a)shows some images from synthetic datasets MJSynth and SynthText. (b) and (c) show several challenging test images. </p>
+        <p> Due to severe distortion and artistic style, a character can visually differ from others of its category, and on the contrary, characters belonging to different
+ categories can have similar appearances. </p>
+        <img src="static/images/picture1.png" alt="First Image" class="image">
+      </div>
+
+      <div class="content">
+        <p>(d) shows the distribution of challenging character features in ParSeq from t-SNE, where the characters cannot be clearly distinguished.</p>
+        <p>(e) shows ViSu can clearly distinguish between images</p>
+        <img src="static/images/picture2.png" alt="Second Image" class="image">
+      </div>
+
+      <div class="content">
+        <p>The framework consists of the student and teacher model. Lrec, Lccr, Lcua mean recognition loss, character consistency regularization loss and character unidirectional alignment loss. Green
+ and orange stand for labeled and unlabeled data, respectively</p>
+        <img src="static/images/framwork.png" alt="Third Image" class="image">
+      </div>
+
+      <div class="content">
+        <p>Comparison with SOTA methods on common benchmarks and Union-B.
+          *means use publicly released checkpoints to evaluate the method. 
+          + means reproduce the methods with the same configuration. 
+          For training data: SL-MJSynth and SynthText; RL-Real labeled data; RU-Union14M-U; RU1-Book32, TextVQA, andST-VQA; RU2-Places2, OpenImages, and ImageNet
+ ILSVRC2012. Cur, M-O, Art, Ctl, Sal, M-W, and Genrepresent Curve, Multi-Oriented, Artistic, Contextless, Salient, Multi-Words, and General. 
+          P(M) means the model size.</p>
+        <img src="static/images/table1.png" alt="Fourth Image" class="image">
+      </div>
       
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        <img src="static/images/carousel1.jpg" alt="First Image" class="image">
+        <p>ComparisonwithSOTAmethodsonseveralchallengingbenchmarks.</p>
+        <img src="static/images/table2.png" alt="Fourth Image" class="image">
       </div>
-
       <div class="content">
-        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-        <img src="static/images/carousel2.jpg" alt="Second Image" class="image">
+        <p>Ablation experiments with different training data.</p>
+        <img src="static/images/table2.png" alt="Fourth Image" class="image">
       </div>
-
-      <div class="content">
-        <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-        <img src="static/images/carousel3.jpg" alt="Third Image" class="image">
-      </div>
-
-      <div class="content">
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        <img src="static/images/carousel4.jpg" alt="Fourth Image" class="image">
-      </div>
-
     </div>
   </div>
 </section>
